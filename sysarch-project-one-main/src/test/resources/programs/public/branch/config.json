@@ -1,0 +1,13 @@
+{
+    "executed_instructions": "5",
+    "initial_reg": {
+    },
+    "initial_mem": {
+    },
+    "final_reg" : {
+        "1":"1",
+        "2":"1"
+    },
+    "final_mem": {
+    }
+}

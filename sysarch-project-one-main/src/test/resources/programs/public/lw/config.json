@@ -1,0 +1,12 @@
+{
+    "executed_instructions": "8",
+    "initial_reg": {
+    },
+    "initial_mem": {
+    },
+    "final_reg" : {
+        "12":"0x80010000"
+    },
+    "final_mem": {
+    }
+}

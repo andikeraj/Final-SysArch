@@ -1,0 +1,14 @@
+{
+    "recommendations": [
+        "vscjava.vscode-java-debug",
+        "vscjava.vscode-java-test",
+        "redhat.java",
+        "vscjava.vscode-maven",
+        "vscjava.vscode-java-dependency",
+        "scalameta.metals",
+        "scala-lang.scala-snippets",
+        "vscjava.vscode-java-test",
+        "ms-azuretools.vscode-docker",
+        "mshr-h.VerilogHDL"
+    ]
+}
