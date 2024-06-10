@@ -16,6 +16,30 @@ class Divider(bitWidth: Int) extends Module {
     val remainder = RegInit(0.U(bitWidth.W))       //current remainder
     val quotient = RegInit(VecInit(Seq.fill(bitWidth)(0.U(1.W))))   //= {dividend[i:0], quotient[N−1:i+1]}, where dividend is the input dividend and quotient is the final output quotient, and i is the current cycle
     val divisor = RegInit(0.U(bitWidth.W))         //divisor
+
+
+    // bit_acc - to store the current bit 
+    // new_rem - to store the remanider after  
+
     
-    ??? // TODO: implement Problem 1.1 here
+
+    when(io.start){
+        val bit_acc = RegInit(0.U)
+        val new_rem = RegInit(0.U(bitWidth.W))
+        val n = RegInit(io.dividend.getWidth.U)
+        
+        for (i <- 0 until n){
+            remainder := remainder << 1 
+            bit_acc := io.dividend(n-1)
+            new_rem := remainder + bit_acc
+            
+            when(new_rem > io.divisor){
+                io.remainder := new_rem
+            }.otherwise{
+                io.remainder := new_rem - io.divisor
+            }
+        } 
+    }
+    
+    io.done := true.B
 }
