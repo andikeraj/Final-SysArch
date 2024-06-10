@@ -14,35 +14,30 @@ class Divider(bitWidth: Int) extends Module {
     })
 
     val remainder = RegInit(0.U(bitWidth.W))       //current remainder
-    val quotient = RegInit(VecInit(Seq.fill(bitWidth)(0.U(1.W))))   //= {dividend[i:0], quotient[N−1:i+1]}, where dividend is the input dividend and quotient is the final output quotient, and i is the current cycle
+    val quotient = RegInit(0.U(bitWidth.W))        //quotient
     val divisor = RegInit(0.U(bitWidth.W))         //divisor
+    val counter = RegInit(0.U(log2Ceil(bitWidth).W)) //counter for loop
 
-
-    // bit_acc - to store the current bit 
-    // new_rem - to store the remainder after 
-
-    
     when(io.start){
-        //when(divisor == 0){
-        //    throw new ArithmeticException("division by 0") 
-        //}
-
-        val bit_acc = RegInit(0.U)
-        val new_rem = RegInit(0.U(bitWidth.W))
-        val n = bitWidth
-
-        
-
-        for (i <- (n-1) until 0){
-            when(new_rem < divisor){
-                quotient(i) := 0.U
-                remainder := new_rem
+        remainder := io.dividend
+        divisor := io.divisor
+        quotient := 0.U
+        counter := bitWidth.U
+    }.otherwise{
+        when(counter =/= 0.U){
+            val tempRemainder = (remainder << 1) | io.dividend(counter)
+            when(tempRemainder >= divisor){
+                remainder := tempRemainder - divisor
+                quotient := (quotient << 1) | 1.U
             }.otherwise{
-                quotient(i) := 1.U
-                remainder := new_rem - divisor
+                remainder := tempRemainder
+                quotient := quotient << 1
             }
+            counter := counter - 1.U
         }
     }
-    
-    io.done := true.B
+
+    io.quotient := quotient
+    io.remainder := remainder
+    io.done := (counter === 0.U)
 }
