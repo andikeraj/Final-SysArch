@@ -19,26 +19,29 @@ class Divider(bitWidth: Int) extends Module {
 
 
     // bit_acc - to store the current bit 
-    // new_rem - to store the remanider after  
+    // new_rem - to store the remainder after 
 
     
-
     when(io.start){
+        //when(divisor == 0){
+        //    throw new ArithmeticException("division by 0") 
+        //}
+
         val bit_acc = RegInit(0.U)
         val new_rem = RegInit(0.U(bitWidth.W))
-        val n = RegInit(io.dividend.getWidth.U)
+        val n = bitWidth
+
         
-        for (i <- 0 until n){
-            remainder := remainder << 1 
-            bit_acc := io.dividend(n-1)
-            new_rem := remainder + bit_acc
-            
-            when(new_rem > io.divisor){
-                io.remainder := new_rem
+
+        for (i <- (n-1) until 0){
+            when(new_rem < divisor){
+                quotient(i) := 0.U
+                remainder := new_rem
             }.otherwise{
-                io.remainder := new_rem - io.divisor
+                quotient(i) := 1.U
+                remainder := new_rem - divisor
             }
-        } 
+        }
     }
     
     io.done := true.B
