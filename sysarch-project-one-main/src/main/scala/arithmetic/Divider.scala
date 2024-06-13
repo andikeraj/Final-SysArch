@@ -17,26 +17,33 @@ class Divider(bitWidth: Int) extends Module {
     val remainder = RegInit(0.U(bitWidth.W))       //current remainder
     val quotient = RegInit(VecInit(Seq.fill(bitWidth)(0.U(1.W))))   //= {dividend[i:0], quotient[N−1:i+1]}, where dividend is the input dividend and quotient is the final output quotient, and i is the current cycle
     val divisor = RegInit(0.U(bitWidth.W))         //divisor
+    val curr_quotient = RegInit(0.U(bitWidth.W)) 
 
     val rPrime = 0.U(bitWidth.W)
     when (io.start){
         remainder := io.remainder
         divisor := io.divisor
         for(i <- bitWidth - 1 to 0) {
-             rPrime := (remainder << 1) | io.dividend(i)
+             rPrime := (remainder << 1) + io.dividend(i)
             when(rPrime < divisor){
                 quotient(i) := 0.U
                 remainder := rPrime
             } .otherwise{
                 quotient(i) :=1.U
-                remainder := rPrime ^ ~divisor
+                remainder := rPrime - divisor
             }
         }
         
     }
-    io.quotient := quotient.asUInt
+    
+    for (i <- bitWidth -1 to 0){
+        curr_quotient := (curr_quotient<<1) + quotient(i)
+    }
+    
+    io.quotient := curr_quotient
     io.remainder := remainder
     io.done := 1.B
+
     // val counter = RegInit(0.U(log2Ceil(bitWidth).W)) //counter for loop
     // println(divisor)
     // when(io.start){
