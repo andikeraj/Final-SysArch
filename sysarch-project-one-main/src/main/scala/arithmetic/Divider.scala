@@ -18,13 +18,12 @@ class Divider(bitWidth: Int) extends Module {
     val quotient = RegInit(VecInit(Seq.fill(bitWidth)(0.U(1.W))))   //= {dividend[i:0], quotient[N−1:i+1]}, where dividend is the input dividend and quotient is the final output quotient, and i is the current cycle
     val divisor = RegInit(0.U(bitWidth.W))         //divisor
 
-    val i = RegInit(bitWidth.U)
+    val i = RegInit(0.U)
     io.done := false.B
     when (io.start){
-        remainder := io.remainder
+        remainder := 0.U
         divisor := io.divisor
-        printf(cf"${io.dividend} ${io.divisor} $remainder\n")
-        Console.flush()
+        i := RegInit(bitWidth.U)
     }
     io.quotient := 0.U
     when (i >= 1.U) {
@@ -36,7 +35,6 @@ class Divider(bitWidth: Int) extends Module {
             quotient(i-1.U) := 1.U
             remainder := rPrime - io.divisor
         }
-        printf(cf"$i $quotient $remainder $rPrime $divisor\n")
         i := i - 1.U
         io.done := false.B
     }.otherwise{
