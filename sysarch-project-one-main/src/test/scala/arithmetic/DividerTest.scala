@@ -57,8 +57,6 @@ class DividerTest extends AnyFlatSpec with ChiselScalatestTester with Matchers {
 
         val actualQuotient = c.io.quotient.peekInt()
         val actualRemainder = c.io.remainder.peekInt()
-        val actualdivisor = c.io.divisor.peekInt()//added by us
-        val actualdividend = c.io.dividend.peekInt() //added bz us
         if (debug) 
           println(s"dividend: $dividend, divisor: $divisor, expected quotient: $quotient, expected remainder: $remainder", s"actual quotient: $actualQuotient, actual remainder: $actualRemainder")
 

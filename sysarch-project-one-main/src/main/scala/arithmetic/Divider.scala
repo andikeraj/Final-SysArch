@@ -20,24 +20,24 @@ class Divider(bitWidth: Int) extends Module {
     val curr_quotient = RegInit(0.U(bitWidth.W)) 
 
     val rPrime = 0.U(bitWidth.W)
-    when (io.start){
+    io.done := false.B
+    when (io.start===true.B){
         remainder := io.remainder
         divisor := io.divisor
-        for(i <- bitWidth - 1 to 0) {
-             rPrime := (remainder << 1) + io.dividend(i)
+        for(i <- (bitWidth - 1) to 0) {
+             rPrime := (remainder << 1.U) | io.dividend(i)
             when(rPrime < divisor){
                 quotient(i) := 0.U
                 remainder := rPrime
             } .otherwise{
-                quotient(i) :=1.U
+                quotient(i) := 1.U
                 remainder := rPrime - divisor
             }
         }
-        
     }
     
-    for (i <- bitWidth -1 to 0){
-        curr_quotient := (curr_quotient<<1) + quotient(i)
+    for (i <- (bitWidth -1) to 0){
+        curr_quotient := (curr_quotient<<1.U) + quotient(i)
     }
     
     io.quotient := curr_quotient
