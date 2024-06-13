@@ -18,63 +18,33 @@ class Divider(bitWidth: Int) extends Module {
     val quotient = RegInit(VecInit(Seq.fill(bitWidth)(0.U(1.W))))   //= {dividend[i:0], quotient[N−1:i+1]}, where dividend is the input dividend and quotient is the final output quotient, and i is the current cycle
     val divisor = RegInit(0.U(bitWidth.W))         //divisor
 
-    val i = RegInit(bitWidth.U)
-    io.done := false.B
+    val i = RegInit(0.U)  // set index to the length of the divident for the cycles
+    io.done := false.B // set done to false since its not done 
     when (io.start){
-        remainder := io.remainder
+        remainder := 0.U
         divisor := io.divisor
-        printf(cf"${io.dividend} ${io.divisor} $remainder\n")
-        Console.flush()
+        i := RegInit(bitWidth.U)
+        //printf(cf"${io.dividend} ${io.divisor} $remainder\n")
     }
     io.quotient := 0.U
     when (i >= 1.U) {
-        val rPrime = (remainder << 1.U) + io.dividend(i-1.U)
-        when(rPrime < io.divisor){
-            quotient(i-1.U) := 0.U
+        val rPrime = (remainder << 1.U) + io.dividend(i-1.U) // R’ = 2 * R + A[i]
+        when(rPrime < io.divisor){  
+            quotient(i-1.U) := 0.U //set Q[i] to 0 since r prime is smaller than B
             remainder := rPrime
         } .otherwise{
-            quotient(i-1.U) := 1.U
+            quotient(i-1.U) := 1.U // otherwise set it to 1
             remainder := rPrime - io.divisor
         }
-        printf(cf"$i $quotient $remainder $rPrime $divisor\n")
-        i := i - 1.U
-        io.done := false.B
+        //printf(cf"$i $quotient $remainder $rPrime $divisor\n")
+        i := i - 1.U // decrement i so we can continue with the other digits of the divident 
+        io.done := false.B // done is false here becuase the division hasnt ended yet. we still have digits to divise in A
     }.otherwise{
         io.quotient := quotient.asUInt
         io.remainder := remainder
-    io.done := true.B
+    io.done := true.B // done should be true here since we have reached the end of the division
 }
-    io.quotient := quotient.asUInt
-    /*for (i2 <- (0 to bitWidth-1).reverse){
-        val curr_quotient = RegInit(0.U(bitWidth.W)) 
-        curr_quotient := (curr_quotient<<1.U) + quotient(i2)
-    }*/
+    //output the results 
+    io.quotient := quotient.asUInt 
     io.remainder := remainder
-
-    // val counter = RegInit(0.U(log2Ceil(bitWidth).W)) //counter for loop
-    // println(divisor)
-    // when(io.start){
-    //     remainder := io.remainder
-    //     divisor := io.divisor
-    //     quotient := 0.U
-    //     counter := bitWidth.U
-    // }.otherwise{
-    //     when(counter =/= 0.U){
-    //         val tempRemainder = (remainder << 1) | io.dividend(counter)
-    //         when(tempRemainder >= divisor){
-    //             remainder := tempRemainder - divisor
-    //             quotient := (quotient << 1) | 1.U
-    //         }.otherwise{
-    //             remainder := tempRemainder
-    //             quotient := quotient << 1
-    //         }
-    //         counter := counter - 1.U
-    //     }
-    // }
-
-    // io.quotient := quotient
-    // io.remainder := remainder
-    // io.done := (counter === 0.U)
-
-    
 }
