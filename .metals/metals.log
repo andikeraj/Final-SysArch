@@ -12287,3 +12287,195 @@ WARNING: Unmatched cancel notification for request id 2409
 Jun 13, 2024 4:17:57 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
 INFO: Unsupported notification method: $/setTrace
 2024.06.13 16:18:03 INFO  no build target found for C:\Users\andik\OneDrive - Universität des Saarlandes\Desktop\projekti i sysit\Final-SysArcj\sysarch-project-one-main\src\main\scala\arithmetic\Divider.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.06.13 16:19:18 INFO  no build target found for C:\Users\andik\OneDrive - Universität des Saarlandes\Desktop\projekti i sysit\Final-SysArcj\sysarch-project-one-main\src\main\scala\arithmetic\Divider.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.06.13 16:19:20 INFO  no build target found for C:\Users\andik\OneDrive - Universität des Saarlandes\Desktop\projekti i sysit\Final-SysArcj\sysarch-project-one-main\src\main\scala\arithmetic\Divider.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.06.13 16:19:20 INFO  no build target found for C:\Users\andik\OneDrive - Universität des Saarlandes\Desktop\projekti i sysit\Final-SysArcj\sysarch-project-one-main\src\main\scala\arithmetic\Divider.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.06.13 16:19:23 INFO  no build target found for C:\Users\andik\OneDrive - Universität des Saarlandes\Desktop\projekti i sysit\Final-SysArcj\sysarch-project-one-main\src\main\scala\arithmetic\Divider.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.06.13 16:21:55 INFO  no build target found for C:\Users\andik\OneDrive - Universität des Saarlandes\Desktop\projekti i sysit\Final-SysArcj\sysarch-project-one-main\src\main\scala\arithmetic\Divider.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.06.13 16:21:55 INFO  no build target found for C:\Users\andik\OneDrive - Universität des Saarlandes\Desktop\projekti i sysit\Final-SysArcj\sysarch-project-one-main\src\main\scala\arithmetic\Divider.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.06.13 16:21:55 ERROR Failed to tokenize input for semantic tokens for C:\Users\andik\OneDrive - Universität des Saarlandes\Desktop\projekti i sysit\Final-SysArcj\sysarch-project-one-main\src\main\scala\arithmetic\Divider.scala
+scala.meta.tokenizers.TokenizeException: <input>:27: error: Invalid literal number, followed by identifier character
+>>>>>>> 719c890efdacfa0a4dfca2e9db70278b6298de05
+           ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.checkNoLetter(LegacyScanner.scala:834)
+	at scala.meta.internal.tokenizers.LegacyScanner.setNumberInteger$1(LegacyScanner.scala:857)
+	at scala.meta.internal.tokenizers.LegacyScanner.getNumber(LegacyScanner.scala:875)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:342)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:214)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:982)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:23)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:16)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:960)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:16)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:331)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:514)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+
+2024.06.13 16:22:12 INFO  no build target found for C:\Users\andik\OneDrive - Universität des Saarlandes\Desktop\projekti i sysit\Final-SysArcj\sysarch-project-one-main\src\main\scala\arithmetic\Divider.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.06.13 16:22:13 INFO  no build target found for C:\Users\andik\OneDrive - Universität des Saarlandes\Desktop\projekti i sysit\Final-SysArcj\sysarch-project-one-main\src\main\scala\arithmetic\Divider.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.06.13 16:22:13 INFO  no build target found for C:\Users\andik\OneDrive - Universität des Saarlandes\Desktop\projekti i sysit\Final-SysArcj\sysarch-project-one-main\src\main\scala\arithmetic\Divider.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.06.13 16:22:13 INFO  no build target found for C:\Users\andik\OneDrive - Universität des Saarlandes\Desktop\projekti i sysit\Final-SysArcj\sysarch-project-one-main\src\main\scala\arithmetic\Divider.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.06.13 16:22:19 INFO  no build target found for C:\Users\andik\OneDrive - Universität des Saarlandes\Desktop\projekti i sysit\Final-SysArcj\sysarch-project-one-main\src\main\scala\arithmetic\Divider.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.06.13 16:22:19 INFO  no build target found for C:\Users\andik\OneDrive - Universität des Saarlandes\Desktop\projekti i sysit\Final-SysArcj\sysarch-project-one-main\src\main\scala\arithmetic\Divider.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.06.13 16:22:21 INFO  no build target found for C:\Users\andik\OneDrive - Universität des Saarlandes\Desktop\projekti i sysit\Final-SysArcj\sysarch-project-one-main\src\main\scala\arithmetic\Divider.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.06.13 16:22:21 INFO  no build target found for C:\Users\andik\OneDrive - Universität des Saarlandes\Desktop\projekti i sysit\Final-SysArcj\sysarch-project-one-main\src\main\scala\arithmetic\Divider.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.06.13 16:22:29 INFO  no build target found for C:\Users\andik\OneDrive - Universität des Saarlandes\Desktop\projekti i sysit\Final-SysArcj\sysarch-project-one-main\src\main\scala\arithmetic\Divider.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.06.13 16:22:29 INFO  no build target found for C:\Users\andik\OneDrive - Universität des Saarlandes\Desktop\projekti i sysit\Final-SysArcj\sysarch-project-one-main\src\main\scala\arithmetic\Divider.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.06.13 16:22:38 INFO  no build target found for C:\Users\andik\OneDrive - Universität des Saarlandes\Desktop\projekti i sysit\Final-SysArcj\sysarch-project-one-main\src\main\scala\arithmetic\Divider.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.06.13 16:22:38 INFO  no build target found for C:\Users\andik\OneDrive - Universität des Saarlandes\Desktop\projekti i sysit\Final-SysArcj\sysarch-project-one-main\src\main\scala\arithmetic\Divider.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.06.13 16:22:38 ERROR Failed to tokenize input for semantic tokens for C:\Users\andik\OneDrive - Universität des Saarlandes\Desktop\projekti i sysit\Final-SysArcj\sysarch-project-one-main\src\main\scala\arithmetic\Divider.scala
+scala.meta.tokenizers.TokenizeException: <input>:30: error: Invalid literal number, followed by identifier character
+>>>>>>> 719c890efdacfa0a4dfca2e9db70278b6298de05
+           ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.checkNoLetter(LegacyScanner.scala:834)
+	at scala.meta.internal.tokenizers.LegacyScanner.setNumberInteger$1(LegacyScanner.scala:857)
+	at scala.meta.internal.tokenizers.LegacyScanner.getNumber(LegacyScanner.scala:875)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:342)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:214)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:982)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:23)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:16)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:960)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:16)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:331)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:514)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+
+2024.06.13 16:22:39 INFO  no build target found for C:\Users\andik\OneDrive - Universität des Saarlandes\Desktop\projekti i sysit\Final-SysArcj\sysarch-project-one-main\src\main\scala\arithmetic\Divider.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.06.13 16:22:38 WARN  no build target for: C:\Users\andik\OneDrive - Universität des Saarlandes\Desktop\projekti i sysit\Final-SysArcj\sysarch-project-one-main\src\main\scala\arithmetic\Divider.scala
+2024.06.13 16:22:39 INFO  no build target found for C:\Users\andik\OneDrive - Universität des Saarlandes\Desktop\projekti i sysit\Final-SysArcj\sysarch-project-one-main\src\main\scala\arithmetic\Divider.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.06.13 16:22:39 ERROR Failed to tokenize input for semantic tokens for C:\Users\andik\OneDrive - Universität des Saarlandes\Desktop\projekti i sysit\Final-SysArcj\sysarch-project-one-main\src\main\scala\arithmetic\Divider.scala
+scala.meta.tokenizers.TokenizeException: <input>:30: error: Invalid literal number, followed by identifier character
+>>>>>>> 719c890efdacfa0a4dfca2e9db70278b6298de05
+           ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.checkNoLetter(LegacyScanner.scala:834)
+	at scala.meta.internal.tokenizers.LegacyScanner.setNumberInteger$1(LegacyScanner.scala:857)
+	at scala.meta.internal.tokenizers.LegacyScanner.getNumber(LegacyScanner.scala:875)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:342)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:214)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:982)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:23)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:16)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:960)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:16)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:331)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:514)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+
+2024.06.13 16:22:40 INFO  no build target found for C:\Users\andik\OneDrive - Universität des Saarlandes\Desktop\projekti i sysit\Final-SysArcj\sysarch-project-one-main\src\main\scala\arithmetic\Divider.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.06.13 16:22:41 INFO  no build target found for C:\Users\andik\OneDrive - Universität des Saarlandes\Desktop\projekti i sysit\Final-SysArcj\sysarch-project-one-main\src\main\scala\arithmetic\Divider.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.06.13 16:22:42 INFO  no build target found for C:\Users\andik\OneDrive - Universität des Saarlandes\Desktop\projekti i sysit\Final-SysArcj\sysarch-project-one-main\src\main\scala\arithmetic\Divider.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.06.13 16:22:42 INFO  no build target found for C:\Users\andik\OneDrive - Universität des Saarlandes\Desktop\projekti i sysit\Final-SysArcj\sysarch-project-one-main\src\main\scala\arithmetic\Divider.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.06.13 16:22:42 ERROR Failed to tokenize input for semantic tokens for C:\Users\andik\OneDrive - Universität des Saarlandes\Desktop\projekti i sysit\Final-SysArcj\sysarch-project-one-main\src\main\scala\arithmetic\Divider.scala
+scala.meta.tokenizers.TokenizeException: <input>:46: error: Invalid literal number, followed by identifier character
+>>>>>>> 719c890efdacfa0a4dfca2e9db70278b6298de05
+           ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.checkNoLetter(LegacyScanner.scala:834)
+	at scala.meta.internal.tokenizers.LegacyScanner.setNumberInteger$1(LegacyScanner.scala:857)
+	at scala.meta.internal.tokenizers.LegacyScanner.getNumber(LegacyScanner.scala:875)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:342)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:214)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:982)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:23)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:16)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:960)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:16)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:331)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:514)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+
+2024.06.13 16:22:43 WARN  no build target for: C:\Users\andik\OneDrive - Universität des Saarlandes\Desktop\projekti i sysit\Final-SysArcj\sysarch-project-one-main\src\main\scala\arithmetic\Divider.scala
+2024.06.13 16:22:43 INFO  no build target found for C:\Users\andik\OneDrive - Universität des Saarlandes\Desktop\projekti i sysit\Final-SysArcj\sysarch-project-one-main\src\main\scala\arithmetic\Divider.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.06.13 16:22:43 INFO  no build target found for C:\Users\andik\OneDrive - Universität des Saarlandes\Desktop\projekti i sysit\Final-SysArcj\sysarch-project-one-main\src\main\scala\arithmetic\Divider.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.06.13 16:22:43 ERROR Failed to tokenize input for semantic tokens for C:\Users\andik\OneDrive - Universität des Saarlandes\Desktop\projekti i sysit\Final-SysArcj\sysarch-project-one-main\src\main\scala\arithmetic\Divider.scala
+scala.meta.tokenizers.TokenizeException: <input>:46: error: Invalid literal number, followed by identifier character
+>>>>>>> 719c890efdacfa0a4dfca2e9db70278b6298de05
+           ^
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:23)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter.syntaxError$(Reporter.scala:25)
+	at scala.meta.internal.tokenizers.Reporter$$anon$1.syntaxError(Reporter.scala:33)
+	at scala.meta.internal.tokenizers.LegacyScanner.checkNoLetter(LegacyScanner.scala:834)
+	at scala.meta.internal.tokenizers.LegacyScanner.setNumberInteger$1(LegacyScanner.scala:857)
+	at scala.meta.internal.tokenizers.LegacyScanner.getNumber(LegacyScanner.scala:875)
+	at scala.meta.internal.tokenizers.LegacyScanner.fetchToken(LegacyScanner.scala:342)
+	at scala.meta.internal.tokenizers.LegacyScanner.nextToken(LegacyScanner.scala:214)
+	at scala.meta.internal.tokenizers.LegacyScanner.foreach(LegacyScanner.scala:982)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.uncachedTokenize(ScalametaTokenizer.scala:23)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.$anonfun$tokenize$1(ScalametaTokenizer.scala:16)
+	at scala.collection.concurrent.TrieMap.getOrElseUpdate(TrieMap.scala:960)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer.tokenize(ScalametaTokenizer.scala:16)
+	at scala.meta.internal.tokenizers.ScalametaTokenizer$$anon$2.apply(ScalametaTokenizer.scala:331)
+	at scala.meta.tokenizers.Api$XtensionTokenizeDialectInput.tokenize(Api.scala:25)
+	at scala.meta.tokenizers.Api$XtensionTokenizeInputLike.tokenize(Api.scala:14)
+	at scala.meta.internal.metals.SemanticTokensProvider$.getTokens(SemanticTokensProvider.scala:28)
+	at scala.meta.internal.metals.SemanticTokensProvider$.provide(SemanticTokensProvider.scala:89)
+	at scala.meta.internal.metals.Compilers.$anonfun$semanticTokens$3(Compilers.scala:514)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.lang.Thread.run(Thread.java:833)
+
+2024.06.13 16:22:43 INFO  no build target found for C:\Users\andik\OneDrive - Universität des Saarlandes\Desktop\projekti i sysit\Final-SysArcj\sysarch-project-one-main\src\main\scala\arithmetic\Divider.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.06.13 16:22:43 INFO  no build target found for C:\Users\andik\OneDrive - Universität des Saarlandes\Desktop\projekti i sysit\Final-SysArcj\sysarch-project-one-main\src\main\scala\arithmetic\Divider.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.06.13 16:22:45 INFO  no build target found for C:\Users\andik\OneDrive - Universität des Saarlandes\Desktop\projekti i sysit\Final-SysArcj\sysarch-project-one-main\src\main\scala\arithmetic\Divider.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.06.13 16:22:45 INFO  no build target found for C:\Users\andik\OneDrive - Universität des Saarlandes\Desktop\projekti i sysit\Final-SysArcj\sysarch-project-one-main\src\main\scala\arithmetic\Divider.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.06.13 16:22:45 WARN  no build target for: C:\Users\andik\OneDrive - Universität des Saarlandes\Desktop\projekti i sysit\Final-SysArcj\sysarch-project-one-main\src\main\scala\arithmetic\Divider.scala
+2024.06.13 16:22:45 INFO  no build target found for C:\Users\andik\OneDrive - Universität des Saarlandes\Desktop\projekti i sysit\Final-SysArcj\sysarch-project-one-main\src\main\scala\arithmetic\Divider.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.06.13 16:22:45 INFO  no build target found for C:\Users\andik\OneDrive - Universität des Saarlandes\Desktop\projekti i sysit\Final-SysArcj\sysarch-project-one-main\src\main\scala\arithmetic\Divider.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.06.13 16:22:45 INFO  no build target found for C:\Users\andik\OneDrive - Universität des Saarlandes\Desktop\projekti i sysit\Final-SysArcj\sysarch-project-one-main\src\main\scala\arithmetic\Divider.scala. Using presentation compiler with project's scala-library version: 3.3.3
+2024.06.13 16:22:49 INFO  no build target found for C:\Users\andik\OneDrive - Universität des Saarlandes\Desktop\projekti i sysit\Final-SysArcj\sysarch-project-one-main\src\main\scala\arithmetic\Divider.scala. Using presentation compiler with project's scala-library version: 3.3.3
